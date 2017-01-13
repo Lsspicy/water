@@ -1,0 +1,175 @@
+body,h1,h2,h3,h4,p,dl,dd,ul,ol,form,input,textarea,th,td,select{margin: 0;padding: 0;}
+em{font-style: normal;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{border: none;vertical-align: top;}
+table{border-collapse: none;}
+input,textarea{outline: none;}
+textarea{resize:none;overflow: auto;}
+body{font-size:12px;font-family: 'myfont';}
+	@font-face {
+	  font-family: 'myfont';
+	  src: url('font/myfont.eot');
+	  src:
+	    url('../font/myfont.eot?#font-spider') format('embedded-opentype'),
+	    url('../font/myfont.woff') format('woff'),
+	    url('../font/myfont.ttf') format('truetype'),
+	    url('../font/myfont.svg') format('svg');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+#wrap{
+	position: relative;
+}
+.logo{
+	width: 46.36159%;
+	position: absolute;
+	top: 2.931442%;
+	left: 50%;
+	margin-left: -20.7%;/*66/1333=4.951237%,(4.951237%-46.36159%)/2*/
+}
+.word{
+	width: 90%;
+	position: absolute;
+	top: 12.3%;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.word .con{
+	width: 100%;
+	-webkit-animation:zoomIn 1s 3.5s both;
+}
+.word .wen{
+	width: 50%;
+	position: absolute;
+	top: 23%;
+	left: 29%;
+	-webkit-animation:bounceIn 1s 4s both;
+}
+.word .shuiping{
+	width: 25%;
+	position: absolute;
+	top: 19%;
+	left: 5%;
+	-webkit-animation:zoomIn 1s 3.5s both;
+}
+.people{
+	width: 94.5%;
+	position: absolute;
+	top: 44.586288%;
+	left: 2%;
+}
+.people img{
+	position: absolute;
+}
+.people img:nth-child(1){
+	width: 39.047619%;
+	top: -100%;
+	left: 0%;
+	position: relative;
+	-webkit-transform:translate3d(0,-200%,0);
+	-webkit-animation:fadeInDownBig 3.5s both;
+}
+.people img:nth-child(2){
+	width: 32.619047%;
+	top: 17%;
+    left: 20%;
+    -webkit-transform:translate3d(0,-200%,0);
+	-webkit-animation:fadeInDownBig 2s both;
+}
+.people img:nth-child(3){
+	width: 26.587301%;
+	top: 24%;
+    left: 37%;
+	z-index: 2;
+	-webkit-transform:translate3d(0,-200%,0);
+	-webkit-animation:fadeInDownBig 1s both;
+}
+.people img:nth-child(4){
+	width: 21.1111111%;
+	top: 13%;
+	left: 59%;
+	-webkit-transform:translate3d(0,-200%,0);
+	-webkit-animation:fadeInDownBig 2s both;
+}
+.people img:nth-child(5){
+	width: 26.507936%;
+	top: 12%;
+   	left: 77%;
+   	-webkit-transform:translate3d(0,-200%,0);
+	-webkit-animation:fadeInDownBig 3.5s both;
+}
+/*@-webkit-keyframes down{
+	from{
+		-webkit-transform:translate3d(0,-200%,0);
+	}
+	to{
+		-webkit-transform:translate3d(0,0%,0);
+	}
+}*/
+.water{
+	width: 100%;
+	position: absolute;
+	top: 84%;
+}
+.water .button{
+	display: block;
+	text-align: center;
+}
+.water .button img{
+	width: 25.581395%;
+}
+.water .shouze1 img{
+	width: 16.279069%;
+
+}
+.water .shouze1{
+	margin-top: 2%;
+	display: block;
+	text-align: center;
+}
+#inner{
+	display: block;
+}
+.sz{
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	display: none;
+}
+.shouze2{
+	width: 83.1207%;
+	position: absolute;
+	top: 2%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 9999;
+}
+.shouze2 img{
+	width: 100%;
+}
+.shouze2 .back img{
+	width: 100%;
+}
+.shouze2 .back{
+	width: 10%;
+	display: block;
+	position: absolute;
+	top: 12%;
+	right: 7%;
+}
+@media screen and (max-height: 480px){
+	.water{
+		top: 87%;
+	}
+	.water .button img{
+		width: 21.581395%;
+}
+	.water .shouze1 img{
+		width: 14.279069%;
+
+	}
+}

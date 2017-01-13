@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>我为青春补补水</title>
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/game.css">
+</head>
+<body>
+	<div id="loading">
+		<div>
+			<p></p>
+			<span>0%</span>
+		</div>			
+	</div>	
+	<div id="wrap">
+		<div id="inner">
+			<div class="game">
+				<img src="img/index_logo.png" alt="" class="logo">
+				<div class="peo">
+				<div id="img">
+					<img src="img/biao01.png" alt="" class="biao01">
+					<img src="img/biao02.png" alt="" class="biao02">
+	<!-- 				<img src="img/biao51.png" alt="" class="img1">
+					<img src="img/biao52.png" alt="" class="img2"> -->
+	<!-- 				<img src="img/biao101.png" alt="" class="img3">
+					<img src="img/biao102.png" alt="" class="img4"> -->
+	<!-- 				<img src="img/biao151.png" alt="" class="img5">
+					<img src="img/biao152.png" alt="" class="img6"> -->
+					</div>
+					<div class="chat">
+						<!-- <img src="img/chat1.png" alt="" class="chat_1"> -->
+<!-- 						<img src="img/chat2.png" alt="" class="chat_2">
+						<img src="img/chat3.png" alt="" class="chat_3"> -->
+					</div>
+					<div class="people">
+						<img src="img/peo0_head.png" alt="" class="head">
+						<img src="img/peo0_body.png" alt="" class="body">
+						<img src="img/hand.png" alt="" class="hand">
+					</div>
+				</div>
+				<div class="foot">
+					<div class="time">
+						<p>
+							<span id="timeshow">20</span>
+							<em>"</em>
+							<span id="secondshow">00</span>
+						</p>
+					</div>
+					<div class="product">
+						<img src="img/product.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="result">
+				<div class="result_c">
+					<img src="img/result.png" alt="">
+					<div id="mingzi">
+						<p class="name">吕绍聪</p>
+						<span>的水润星值为</span>
+					</div>
+				</div>
+				<div class="score clear">
+					<!-- <img src="img/1.png" alt="">
+					<img src="img/1.png" alt=""> -->
+				</div>
+				<div class="result_p">
+					<div class="con" style="display:none">
+						<img src="img/rt_11.png" alt="" class="img_1">
+						<img src="img/rt_12.png" alt="">
+					</div>
+					<div class="con" style="display:none">
+						<img src="img/rt_21.png" alt="" class="img_1">
+						<img src="img/rt_22.png" alt="">
+					</div>
+					<div class="con" style="display:none">
+						<img src="img/rt_31.png" alt="" class="img_1">
+						<img src="img/rt_32.png" alt="">
+					</div>
+				</div>
+				<div class="result_b">
+					<img src="img/r_1.png" alt="" class="i1">
+					<img src="img/r_2.png" alt="" class="i2">
+					<img src="img/r_3.png" alt="" class="i3">
+				</div>
+				<div class="button">
+					<img src="img/choujiang.png" alt="">
+				</div>
+			</div>
+			<div class="choujiang">
+				<div class="lottery_i">
+					<img src="img/text_01.png" alt="">
+				</div>
+				<div class="lottery_pro">
+					<ul class="clear">
+						<li class="li1 fl"><img src="img/pro_01.png" alt=""></li>
+						<li class="li2 fl"><img src="img/pro_02.png" alt=""></li>
+						<li class="li3 fl"><img src="img/pro_03.png" alt=""></li>
+					</ul>
+				</div>
+				<div class="phone">
+					<img src="img/yujing.png" alt="" class="xize">
+					<div class="phone_b">
+						<img src="img/photo.png" alt="">
+						<input type="text" class="txt">
+					</div>
+				</div>
+				<div class="footer">
+					<div class="submit">
+						<img src="img/tijiao.png" alt="">
+					</div>
+					<div class="fajiang">
+						<img src="img/xize.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="rules">
+			<a href="###"><img src="img/a_back.png" alt="" class="back"></a>
+			<img src="img/fajiang.png" alt="" class="rules_xize">
+			<img src="img/a_01.png" alt="" class="ping">
+		</div>
+		<div class="share">
+			<div class="share_main">
+				<img src="img/abc.png" alt="" class="abc">
+				<img src="img/to_share.png" alt="" class="to_share">
+				<img src="img/pen.png" alt="" class="pen">
+				<img src="img/share_text2.png" alt="" class="share_text2">
+				<img src="img/share_text.png" alt="" class="share_text">
+				<img src="img/sh_people.png" alt="" class="sh_people">
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/game.js"></script>
+<script type="text/javascript">
+
+	//loading
+	var limg = ["loading.jpg","load_font.png"];
+	var imgs = ["index_logo.png","biao01.png","biao02.png","biao51.png","biao52.png","biao101.png","biao102.png","biao151.png","biao152.png","chat1.png","chat2.png","chat3.png","peo0_head.png","peo1_head.png","peo2_head.png","peo3_head.png","peo4_head.png","peo5_head.png","peo6_head.png","peo7_head.png","peo8_head.png","peo9_head.png","peo10_head.png","peo11_head.png","peo12_head.png","peo13_head.png","peo0_body.png","peo1_body.png","peo2_body.png","peo3_body.png","peo4_body.png","peo5_body.png","peo6_body.png","peo7_body.png","peo8_body.png","peo9_body.png","peo10_body.png","peo11_body.png","peo12_body.png","peo13_body.png","hand.png","product.png","result.png","0.png","1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png","9.png","rt_11.png","rt_12.png","rt_21.png","rt_22.png","rt_31.png","rt_32.png","r_1.png","r_2.png","r_3.png","choujiang.png","text_01.png","pro_01.png","pro_02.png","pro_03.png","yujing.png","photo.png","tijiao.png","xize.png","a_back.png","fajiang.png","a_01.png","abc.png","to_share.png","pen.png","share_text2.png","share_text.png","sh_people.png"];
+	var $span = $("#loading").find("span");
+	var $p = $("#loading p");
+	var ind = 0;
+	for (var i = 0; i < limg.length; i++) {
+		var img = new Image();
+		img.src = "img/"+limg[i];
+			img.onload = function  () {
+				ind++;
+				if (ind==limg.length) {
+					loading(imgs,function  () {
+						 $("#loading").hide();
+						 $("#wrap").show();	
+						})				
+					};				
+			}
+	};
+	function loading (aimg,fn) {
+		for (var i = 0; i < aimg.length; i++) {
+				var index = 0;
+				var img = new Image();
+				img.src = "img/"+aimg[i];
+					img.onload = function  () {
+						index++;
+						var p = parseInt(index/aimg.length*100);
+						$p.css("backgroundPosition","0 -"+parseInt(195*(p/100))+"px");
+						$span.html(p +"%");
+						// alert($span.html)
+						$("#wrap").css("display","none");
+						if (index==imgs.length) {
+							fn&&fn();
+						};
+					}
+			};		
+	}	
+
+	
+</script>
+</html>

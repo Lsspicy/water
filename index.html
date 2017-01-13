@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">    
+	<title>我为青春补补水</title>
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+</head>
+<body>
+	<div id="loading">
+		<div>
+			<p></p>
+			<span>0%</span>
+		</div>			
+	</div>	
+	<div id="wrap">
+		<div id="inner">
+			<img src="img/index_logo.png" alt="" class="logo">
+			<div class="word">
+				<img src="img/in_bg01.png" alt="" class="con">
+				<img src="img/duihua.png" alt="" class="wen">
+				<img src="img/in_01.png" alt="" class="shuiping">
+			</div>
+			<div class="people">
+				<img src="img/people_01.png" alt="">
+				<img src="img/people_02.png" alt="">
+				<img src="img/people_03.png" alt="">
+				<img src="img/people_04.png" alt="">
+				<img src="img/people_05.png" alt="">
+			</div>
+			<div class="water">
+				<a href="choose.html" class="button">
+					<img src="img/start.png" alt="" >
+				</a>
+				<a href="###" class="shouze1">
+					<img src="img/shouze.png" alt="" >
+				</a>	
+			</div>
+		</div>
+		<div class="sz">
+			<img src="img/bg.jpg" alt="">
+			<div class="shouze2">
+				<a href="###" class="back">
+					<img src="img/a_back.png" alt="">
+				</a>
+				<img src="img/shouze2.png" alt="">
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript">
+	var w = $(window).width();
+	var h = $(window).height();
+	if (w/h>0.6666) {
+		$("#wrap").width($(window).height()*0.66667);
+	};
+
+	$(window).on("resize",function  () {
+		var w = $(window).width();
+		var h = $(window).height();
+		if (w/h>0.6666) {
+			$("#wrap").width($(window).height()*0.66667);
+		};
+	})
+	$(".water").find(".shouze1").on("touchstart",function  () {
+		$(".sz").css("display","block");
+	})
+	$(".sz").find(".back").on("touchstart",function  () {
+		$(".sz").css("display","none");
+
+	})
+	var $span = $("#loading").find("span");
+	var $p = $("#loading p");
+	// alert($span)
+	var limg = ["loading.jpg","load_font.png"]
+	var imgs = ["index_logo.png","in_bg01.png","duihua.png","in_01.png","people_01.png","people_02.png","people_03.png","people_04.png","people_05.png","start.png","shouze.png","a_back.png","shouze2.png"];
+	var ind = 0;
+	for (var i = 0; i < limg.length; i++) {
+		var img = new Image();
+		img.src = "img/"+limg[i];
+			img.onload = function  () {
+				ind++;
+				if (ind==limg.length) {
+					loading(imgs,function  () {
+						 $("#loading").hide();
+						 $("#wrap").show();	
+						})				
+					};				
+			}
+	};
+	function loading (aimg,fn) {
+		for (var i = 0; i < aimg.length; i++) {
+				var index = 0;
+				var img = new Image();
+				img.src = "img/"+aimg[i];
+					img.onload = function  () {
+						index++;
+						var p = parseInt(index/aimg.length*100);
+						$p.css("backgroundPosition","0 -"+parseInt(195*(p/100))+"px");
+						$span.html(p +"%");
+						// alert($span.html)
+						$("#wrap").css("display","none");
+						if (index==imgs.length) {
+							fn&&fn();
+						};
+					}
+			};		
+	}
+
+
+	
+</script>
+</html>
